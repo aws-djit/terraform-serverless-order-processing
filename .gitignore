@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.zip
+.terraform.tfstate.lock.info
+
+# Local configuration
+terraform.tfvars
+*.tfvars
+!*.tfvars.example
+
+# Sensitive files
+*.pem
+*.key
+.env
