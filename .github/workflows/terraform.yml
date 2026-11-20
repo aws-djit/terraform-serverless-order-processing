@@ -60,4 +60,6 @@ jobs:
 
       # Step 9: Terraform plan
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -input=false
+        env:
+          TF_VAR_email_address: ${{ secrets.EMAIL_ADDRESS }}
